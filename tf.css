@@ -1,0 +1,116 @@
+/* Resetare stiluri implicite ale browser-ului */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Stilizare buton */
+  .buton-profesional {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #00e1ff; /* Culoarea borderului butonului */
+    color: #00d9ff; /* Culoarea textului */
+    background-color: transparent; /* Fundal transparent */
+    transition: all 0.3s ease;
+  }
+  
+  /* Stilizare buton la hover */
+  .buton-profesional:hover {
+    background-color: #000000; /* Schimbarea culorii de fundal la hover */
+    color: #00ccff; /* Schimbarea culorii textului la hover */
+  }
+  
+
+/* Stiluri pentru ecranele mici (dispozitive mobile) */
+@media screen and (max-width: 768px) {
+  /* Exemplu: Ajustarea dimensiunii textului */
+  h2 {
+    font-size: 24px;
+  }
+
+  /* Exemplu: Reducerea padding-ului sau margin-ului pentru a folosi spațiul mai eficient */
+  .hero-section .content {
+    padding: 0 10px; /* Modifică padding-ul aici */
+  }
+
+  /* Exemplu: Menținerea imaginilor în limite pe ecrane mici */
+  .hero-section {
+    background-size: contain; /* Ajustează dimensiunea imaginilor pentru a le menține în limite */
+  }
+}
+
+/* Resetare stiluri implicite ale browser-ului */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Stiluri pentru container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+/* Default styling */
+.your-background {
+  background-image: url('nice1122.jpg');
+  background-size: cover; /* or contain, depending on your preference */
+  background-position: center center; /* or adjust as needed */
+}
+
+/* Media query for smaller devices */
+@media screen and (max-width: 768px) {
+  .your-background {
+      background-size: 100%; /* or adjust size as needed */
+  }
+}
+
+  /* Resetare stiluri implicite ale browser-ului */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Stilizare fundal video */
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+  /* Stilizare conținut text */
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  /* Stilizare text */
+  .text {
+    position: relative;
+  }
+  

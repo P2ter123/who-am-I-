@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siteul lui Petru</title>
+  <style>
+    /* Resetare stiluri implicite ale browser-ului */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Stilizare buton */
+    .buton-profesional {
+      display: inline-block;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      border: 2px solid #00e1ff; /* Culoarea borderului butonului */
+      color: #00d9ff; /* Culoarea textului */
+      background-color: transparent; /* Fundal transparent */
+      transition: all 0.3s ease;
+    }
+
+    /* Stilizare buton la hover */
+    .buton-profesional:hover {
+      background-color: #000000; /* Schimbarea culorii de fundal la hover */
+      color: #00ccff; /* Schimbarea culorii textului la hover */
+    }
+
+    /* Stiluri pentru container */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    /* Stilizare fundal video */
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #video-background {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+
+    /* Stilizare conținut text */
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      z-index: 1;
+    }
+
+    /* Stilizare text */
+    .text {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <video autoplay muted loop id="video-background">
+      <source src="dece....mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="content">
+      <div class="text">
+        <p align="center"><font color="grey" face="Courier" size="7"> Who Am I?</font></p>
+        <p align="center"><font color="grey" face="Courier" size="6"> Hello, my name is Peter</font></p>
+        <p align="center"><font color="grey" face="Courier" size="6"> I'm 13 years old and I'm officially a programmer</font></p>
+        <p align="center"><font color="grey" face="Courier" size="6"> I may not have the best grades at school</font></p>
+        <p align="center"><font color="grey" face="Courier" size="6"> but I have the best programming skills from my school</font></p>
+        <p align="center"><font color="grey" face="Courier" size="6"> and I LOVE my GF</font></p>
+      </div>
+    </div>
+</div>
+</body>
+</html>
